@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Interiors Nova — Stylish Home Decor</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- header will be loaded from partial -->
+	<div id="siteHeader"></div>
+
+	<main>
+		<section class="hero">
+			<div class="hero-slider" id="heroSlider">
+				<div class="slide" style="background-image:url('pic/hero1.webp')">
+					<div class="hero-content container">
+						<h1>Beautiful Interiors for Every Home</h1>
+						<p>Curated furniture, decor, and lighting to make your space sing.</p>
+						<a class="btn" href="#featured">Shop Now</a>
+					</div>
+				</div>
+				<div class="slide" style="background-image:url('pic/hero2.webp')">
+					<div class="hero-content container">
+						<h1>Comfort Meets Style</h1>
+						<p>Timeless designs, premium materials, and affordable prices.</p>
+						<a class="btn" href="#categories">Explore</a>
+					</div>
+				</div>
+				<div class="slide" style="background-image:url('pic/hero3.webp')">
+					<div class="hero-content container">
+						<h1>Transform Your Space</h1>
+						<p>Discover exclusive collections designed for modern living.</p>
+						<a class="btn" href="#featured">View Collection</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-dots" id="heroDots"></div>
+		</section>
+
+		<section id="categories" class="container categories">
+			<h2>Shop by Categories</h2>
+			<div class="grid">
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=50"
+						alt="Living Room">
+					<div class="card-label">Living Sofa</div>
+					<button class="card-action" aria-label="View Living Sofa">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M7 17L17 7M17 7H7M17 7V17"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=50"
+						alt="Bedroom">
+					<div class="card-label">Bed Set</div>
+					<button class="card-action" aria-label="View Bed Set">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M7 17L17 7M17 7H7M17 7V17"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=800&q=50"
+						alt="Lighting">
+					<div class="card-label">Dining Table</div>
+					<button class="card-action" aria-label="View Dining Table">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M7 17L17 7M17 7H7M17 7V17"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="card">
+					<img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=800&q=50"
+						alt="Decor">
+					<div class="card-label">Drawing Room Sofa</div>
+					<button class="card-action" aria-label="View Drawing Room Sofa">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M7 17L17 7M17 7H7M17 7V17"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="featured" class="container featured">
+			<h2>Featured Products</h2>
+			<div class="products-slider">
+				<button class="slider-nav slider-prev" id="productsPrev" aria-label="Previous products">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M15 18l-6-6 6-6"></path>
+					</svg>
+				</button>
+				<div class="products products-track" id="productsTrack">
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1549187774-8a7a8f3f5a2f?auto=format&fit=crop&w=600&q=50"
+							alt="Modern Sofa">
+						<div class="product-info">
+							<h3 class="product-title">Modern Sofa With Luxurious Design</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">PKR 35,000</span>
+								<span class="product-price-new">PKR 28,000</span>
+							</div>
+							<a href="#" class="product-whatsapp" data-product="Modern Sofa With Luxurious Design"
+								data-price="PKR 28,000" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=600&q=50"
+							alt="Designer Lamp">
+						<div class="product-info">
+							<h3 class="product-title">Designer Lamp With Modern Style</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">PKR 8,500</span>
+								<span class="product-price-new">PKR 6,500</span>
+							</div>
+							<a href="#" class="product-whatsapp" data-product="Designer Lamp With Modern Style"
+								data-price="PKR 6,500" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=600&q=50"
+							alt="Handwoven Rug">
+						<div class="product-info">
+							<h3 class="product-title">Handwoven Rug With Premium Quality</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">PKR 15,000</span>
+								<span class="product-price-new">PKR 12,400</span>
+							</div>
+							<a href="#" class="product-whatsapp" data-product="Handwoven Rug With Premium Quality"
+								data-price="PKR 12,400" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=600&q=50"
+							alt="Accent Chair">
+						<div class="product-info">
+							<h3 class="product-title">Accent Chair With Elegant Design</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">PKR 12,000</span>
+								<span class="product-price-new">PKR 9,800</span>
+							</div>
+							<a href="#" class="product-whatsapp" data-product="Accent Chair With Elegant Design"
+								data-price="PKR 9,800" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=50"
+							alt="Comfort Sofa">
+						<div class="product-info">
+							<h3 class="product-title">Comfort Sofa With Premium Materials</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">PKR 28,000</span>
+								<span class="product-price-new">PKR 22,000</span>
+							</div>
+							<a href="#" class="product-whatsapp" data-product="Comfort Sofa With Premium Materials"
+								data-price="PKR 22,000" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=600&q=50"
+							alt="Handwoven Rug">
+						<div class="product-info">
+							<h3 class="product-title">Handwoven Rug With Premium Quality</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">PKR 15,000</span>
+								<span class="product-price-new">PKR 12,400</span>
+							</div>
+							<a href="#" class="product-whatsapp" data-product="Handwoven Rug With Premium Quality"
+								data-price="PKR 12,400" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+				</div>
+				<button class="slider-nav slider-next" id="productsNext" aria-label="Next products">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M9 18l6-6-6-6"></path>
+					</svg>
+				</button>
+				<div class="products-dots" id="productsDots"></div>
+			</div>
+		</section>
+
+		<section class="promo-section">
+			<div class="container promo-container">
+				<div class="promo-content">
+					<h2 class="promo-heading">Transform Your Home with Stylish furniture</h2>
+					<p class="promo-text">We specialize in stylish and functional furniture for bedrooms, living rooms,
+						dining areas, offices, and outdoor spaces. Each piece is crafted with meticulous attention to
+						detail and superior craftsmanship, ensuring durability and timeless elegance. Whether you lean
+						towards modern minimalism or classic sophistication, Interiors Nova offers furniture that
+						enhances your home décor to reflect your personal style. Explore our collections and create a
+						home that fits your lifestyle perfectly.</p>
+					<ul class="promo-list">
+						<li>Stylish and useful furniture for every room.</li>
+						<li>Carefully made with high-quality materials.</li>
+						<li>Built to last and look good over time.</li>
+						<li>Choices for both modern and classic styles.</li>
+						<li>Furniture that matches your home and personal taste.</li>
+					</ul>
+					<a href="#featured" class="promo-btn">Discovery now</a>
+				</div>
+				<div class="promo-image">
+					<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=80"
+						alt="Elegant Dining Room Set">
+				</div>
+			</div>
+		</section>
+
+		<section id="bedset" class="container featured bedsets">
+			<h2>Bed Set</h2>
+			<div class="products-slider">
+				<button class="slider-nav slider-prev" id="bedsetPrev" aria-label="Previous bed sets">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M15 18l-6-6 6-6"></path>
+					</svg>
+				</button>
+				<div class="products products-track" id="bedsetTrack">
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1631889993954-0d8a607d5f6e?auto=format&fit=crop&w=800&q=80"
+							alt="Luxurious Classic Cherry-Finished Bed Set">
+						<div class="product-info">
+							<h3 class="product-title">Luxurious Classic Cherry-Finished Bed Set with Ornate Details</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 350,000</span>
+								<span class="product-price-new">Rs 310,000</span>
+							</div>
+							<a href="#" class="product-whatsapp"
+								data-product="Luxurious Classic Cherry-Finished Bed Set with Ornate Details"
+								data-price="Rs 310,000" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1631889993954-0d8a607d5f6e?auto=format&fit=crop&w=800&q=80"
+							alt="Paris Elegant Brown Wood Bed Set">
+						<div class="product-info">
+							<h3 class="product-title">Paris Elegant Brown Wood Bed Set</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 375,000</span>
+								<span class="product-price-new">Rs 315,000</span>
+							</div>
+							<a href="#" class="product-whatsapp" data-product="Paris Elegant Brown Wood Bed Set"
+								data-price="Rs 315,000" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1631889993954-0d8a607d5f6e?auto=format&fit=crop&w=800&q=80"
+							alt="New Classic Furniture Alamos Charcoal Grey Bed Set">
+						<div class="product-info">
+							<h3 class="product-title">New Classic Furniture Alamos Charcoal Grey Bed Set</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 210,000</span>
+								<span class="product-price-new">Rs 170,000</span>
+							</div>
+							<a href="#" class="product-whatsapp"
+								data-product="New Classic Furniture Alamos Charcoal Grey Bed Set"
+								data-price="Rs 170,000" target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1631889993954-0d8a607d5f6e?auto=format&fit=crop&w=800&q=80"
+							alt="Classic Bed Set With Dark Brown Wooden Finish">
+						<div class="product-info">
+							<h3 class="product-title">Classic Bed Set With Dark Brown Wooden Finish</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 215,000</span>
+								<span class="product-price-new">Rs 175,000</span>
+							</div>
+							<a href="#" class="product-whatsapp"
+								data-product="Classic Bed Set With Dark Brown Wooden Finish" data-price="Rs 175,000"
+								target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+				</div>
+				<button class="slider-nav slider-next" id="bedsetNext" aria-label="Next bed sets">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M9 18l6-6-6-6"></path>
+					</svg>
+				</button>
+				<div class="products-dots" id="bedsetDots"></div>
+			</div>
+			<div class="more-products-wrapper">
+				<button class="more-products-btn" id="showAllProducts">More Products</button>
+			</div>
+		</section>
+
+		<section id="diningtable" class="container featured dining-tables">
+			<h2>Dining Table</h2>
+			<div class="products-slider">
+				<button class="slider-nav slider-prev" id="diningPrev" aria-label="Previous dining tables">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M15 18l-6-6 6-6"></path>
+					</svg>
+				</button>
+				<div class="products products-track" id="diningTrack">
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80"
+							alt="Elegant Modern Dining Table Set">
+						<div class="product-info">
+							<h3 class="product-title">Elegant Modern Dining Table Set With 6 Chairs</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 280,000</span>
+								<span class="product-price-new">Rs 240,000</span>
+							</div>
+							<a href="#" class="product-whatsapp"
+								data-product="Elegant Modern Dining Table Set With 6 Chairs" data-price="Rs 240,000"
+								target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80"
+							alt="Classic Wooden Dining Table Set">
+						<div class="product-info">
+							<h3 class="product-title">Classic Wooden Dining Table Set With 8 Chairs</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 320,000</span>
+								<span class="product-price-new">Rs 275,000</span>
+							</div>
+							<a href="#" class="product-whatsapp"
+								data-product="Classic Wooden Dining Table Set With 8 Chairs" data-price="Rs 275,000"
+								target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80"
+							alt="Luxury Glass Top Dining Table Set">
+						<div class="product-info">
+							<h3 class="product-title">Luxury Glass Top Dining Table Set With 4 Chairs</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 250,000</span>
+								<span class="product-price-new">Rs 210,000</span>
+							</div>
+							<a href="#" class="product-whatsapp"
+								data-product="Luxury Glass Top Dining Table Set With 4 Chairs" data-price="Rs 210,000"
+								target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+					<article class="product">
+						<div class="product-sale">SALE!</div>
+						<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80"
+							alt="Contemporary Round Dining Table Set">
+						<div class="product-info">
+							<h3 class="product-title">Contemporary Round Dining Table Set With 6 Chairs</h3>
+							<div class="product-pricing">
+								<span class="product-price-old">Rs 295,000</span>
+								<span class="product-price-new">Rs 255,000</span>
+							</div>
+							<a href="#" class="product-whatsapp"
+								data-product="Contemporary Round Dining Table Set With 6 Chairs" data-price="Rs 255,000"
+								target="_blank" rel="noopener">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+								</svg>
+								Order Via WhatsApp
+							</a>
+						</div>
+					</article>
+				</div>
+				<button class="slider-nav slider-next" id="diningNext" aria-label="Next dining tables">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M9 18l6-6-6-6"></path>
+					</svg>
+				</button>
+				<div class="products-dots" id="diningDots"></div>
+			</div>
+			<div class="more-products-wrapper">
+				<button class="more-products-btn" id="showAllDiningProducts">More Products</button>
+			</div>
+		</section>
+
+		<section class="homeinterior-section">
+			<div class="container homeinterior-container">
+				<h2 class="homeinterior-main-heading">Modern & Affordable Furniture in Pakistan</h2>
+				<div class="homeinterior-content-wrapper">
+					<div class="homeinterior-image">
+						<img src="https://images.unsplash.com/photo-1631889993954-0d8a607d5f6e?auto=format&fit=crop&w=1200&q=80"
+							alt="Modern Bedroom Furniture">
+					</div>
+					<div class="homeinterior-content">
+						<h3 class="homeinterior-heading">Why Choose Interiors Nova?</h3>
+						<p class="homeinterior-text">At Interiors Nova, we offer more than just furniture. We focus on
+							quality and customer satisfaction, providing a wide range of stylish and durable bedroom
+							furniture, sofas, living room essentials, and dining tables. We make luxury affordable
+							without compromising on quality. Our dedicated customer service ensures a seamless
+							experience from selection to delivery.</p>
+						<ul class="homeinterior-list">
+							<li>Quality Craftsmanship</li>
+							<li>Customization Options</li>
+							<li>Affordable Pricing</li>
+							<li>Reliable Shipping</li>
+						</ul>
+						<a href="#featured" class="homeinterior-btn">Discovery now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container about">
+			<h2>Why Choose Us</h2>
+			<div class="grid-3">
+				<div class="feature">
+					<h3>Curated Selection</h3>
+					<p>Handpicked items from trusted suppliers, ensuring only the finest quality furniture reaches your
+						home.</p>
+				</div>
+				<div class="feature">
+					<h3>Visit and Pick Up</h3>
+					<p>Visit our showroom to see and feel the quality firsthand, then pick up your chosen pieces at your
+						convenience.</p>
+				</div>
+				<div class="feature">
+					<h3>Quality Guarantee</h3>
+					<p>We stand by product quality and craftsmanship, ensuring durability and timeless elegance in every
+						piece.</p>
+				</div>
+				<div class="feature">
+					<h3>Customize Products</h3>
+					<p>Personalize your furniture with customization options to match your style and space perfectly.
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- footer will be loaded from partial -->
+	<div id="siteFooter"></div>
+
+	<script src="load-partials.js"></script>
+	<script src="script.js"></script>
+
+
+</body>
+
+</html>
