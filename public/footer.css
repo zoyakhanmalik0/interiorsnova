@@ -15,7 +15,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 30px;
-padding-bottom: 50px;
+  margin-bottom: 60px;
   align-items: flex-start;
 }
 
@@ -331,7 +331,6 @@ padding-bottom: 50px;
   .footer-top {
     flex-direction: column;
     gap: 40px;
-    
   }
 
   .footer-col {

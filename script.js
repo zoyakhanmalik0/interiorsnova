@@ -509,3 +509,69 @@ setTimeout(function() {
     console.error('Floating chat elements still not found after timeout!');
   }
 }, 500);
+
+// Newsletter Form Handler
+document.addEventListener('DOMContentLoaded', function() {
+  const newsletterForm = document.getElementById('newsletterForm');
+  
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const email = document.getElementById('newsletterEmail').value;
+      const messageEl = document.getElementById('newsletterMessage');
+      const button = document.querySelector('.newsletter-btn');
+      const originalButtonHTML = button.innerHTML;
+      
+      // Validate email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        showNewsletterMessage('Please enter a valid email address', 'error', messageEl);
+        return;
+      }
+      
+      // Show loading state
+      button.disabled = true;
+      button.innerHTML = '<span style="animation: spin 1s linear infinite;">⏳</span>';
+      
+      try {
+        // Send newsletter subscription
+        const response = await fetch('/api/newsletter-signup', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email })
+        });
+        
+        if (response.ok) {
+          showNewsletterMessage('✅ Thank you! Check your email for 10% discount code.', 'success', messageEl);
+          newsletterForm.reset();
+          document.getElementById('newsletterEmail').focus();
+        } else {
+          const data = await response.json();
+          showNewsletterMessage(data.message || '❌ Subscription failed. Please try again.', 'error', messageEl);
+        }
+      } catch (error) {
+        console.error('Newsletter error:', error);
+        showNewsletterMessage('❌ Connection error. Please try again.', 'error', messageEl);
+      } finally {
+        // Restore button
+        button.disabled = false;
+        button.innerHTML = originalButtonHTML;
+      }
+    });
+  }
+});
+
+function showNewsletterMessage(message, type, element) {
+  element.textContent = message;
+  element.className = 'newsletter-message ' + type;
+  element.style.display = 'block';
+  
+  // Auto-hide after 5 seconds
+  setTimeout(() => {
+    element.style.display = 'none';
+  }, 5000);
+}
+

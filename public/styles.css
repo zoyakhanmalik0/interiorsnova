@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Artis Sans', system-ui, "Segoe UI", Arial, sans-serif;
+  font-family: Inter, system-ui, "Segoe UI", Arial, sans-serif;
   margin: 0;
   color: var(--text);
   background: var(--bg);
@@ -129,10 +129,6 @@ body {
 
 .btn:hover {
   background: #b56a3a;
-}
-
-.btn-gold:hover {
-  background: #000 !important;
 }
 
 .hero-dots {
@@ -931,12 +927,10 @@ body {
     padding: 64px 32px;
     margin-left: 40px;
     max-width: 700px;
-    margin-top: 10px;
   }
 
   .hero-content h1 {
     font-size: 2.6rem;
-    
   }
 
   .hero-content p {
